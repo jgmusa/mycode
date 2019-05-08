@@ -1,0 +1,29 @@
+---
+- name: Playbook that targets hosts
+  hosts: planet-express
+  gather_facts: yes
+
+  tasks:
+  - name: Install figlet
+    apt:
+      name: figlet
+      state: present # "present" talks to the repo for latest stable release
+                     # it could be "absent" as well
+    become: yes
+    when: ansible_os_family == "Debian"
+
+  - name: Install figlet
+    yum:
+      name: figlet
+      state: present
+    become: yes
+    when: ansible_os_family == "RedHat"
+
+  - name: Issue a command
+    command: ls /home
+    become: yes
+    register: homevarz
+
+  - name: display homevarz
+    debug: # debug = print
+      var: homevarz

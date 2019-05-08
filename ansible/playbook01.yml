@@ -1,0 +1,15 @@
+---
+- name: My first paybook
+  hosts: localhost
+
+  tasks:
+  - name: deploy sofware from aptitude repository
+    apt:
+      name: bastet   # install the software package bastet
+      state: present  # we want the software to be INSTALLED
+    become: yes  # run in sudo mode (privilaged)
+    register: results  # save the JSON that is sent back
+
+  - name: print to the screen our results variable
+    debug:
+      var: results
