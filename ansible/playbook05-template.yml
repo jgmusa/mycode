@@ -1,0 +1,13 @@
+---
+  - name: Our teamplating playbook
+    hosts: planet-express
+    gather_facts: yes
+
+    vars:
+      thl: anything
+
+    tasks:
+    - name: Our template
+      template:
+        dest: ~/ship.conf
+        src: ~/mycode/ansible/template/ship.conf.j2

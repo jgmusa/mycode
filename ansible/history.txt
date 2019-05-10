@@ -1,0 +1,211 @@
+    1  ll
+    2  whoami
+    3  mkdir mycode
+    4  mkdir mycode/ansible
+    5  cd mycode/ansible/
+    6  ll
+    7  vim playbook01.yml
+    8  vi playbook01.yml
+    9  ll
+   10  ansible --version
+   11  cat playbook01.yml 
+   12  vi playbook01.yml
+   13  history
+   14  ansible-doc -F | wc -l
+   15  cat playbook01.yml 
+   16  whatta heck
+   17  ls -ltr
+   18  ll
+   19  vi playbook01.yml 
+   20  ansible-playbook playbook01.yml 
+   21  cat playbook01.yml 
+   22  vi playbook02-prompt.yml
+   23  ls -l
+   24  ll
+   25  cat playbook02-prompt.yml 
+   26  ansible-playbook playbook02-prompt.yml 
+   27  cd ../.
+   28  cd ..
+   29  ls -l
+   30  cd ~
+   31  pwd
+   32  cd mycode/
+   33  ll
+   34  git pull https://gibhub.com/jgmusa/mycode.git
+   35  git init
+   36  git pull https://gibhub.com/jgmusa/mycode.git
+   37  git config --global user.name "john"
+   38  git config --global user.email "jgmac58@gmail.com"
+   39  git pull https://gibhub.com/jgmusa/mycode.git
+   40  pwd
+   41  ping github.com
+   42  git pull https://github.com/jgmusa/mycode.git
+   43  git push origin master
+   44  git push https://github.com/jgmusa/mycode master
+   45  git --version
+   46  cd /
+   47  wget https://alta3.com/static/projects/ansible/modules/setup.sh -O mod-setup.sh
+   48  cd
+   49  wget https://alta3.com/static/projects/ansible/modules/setup.sh -O mod-setup.sh
+   50  pwd
+   51  ll
+   52  cat mod-setup.sh 
+   53  vim mod-setup.sh 
+   54  bash mod-setup.sh 
+   55  pwd
+   56  ll
+   57  cd mycode/
+   58  ll
+   59  cd ansible/
+   60  ll
+   61  more playbook03-hosts.yml 
+   62  ll
+   63  cd ..
+   64  ll
+   65  cd ..
+   66  ll
+   67  view mod-setup.sh 
+   68  pwd
+   69  cd mycode/
+   70  ll
+   71  cd ansible/
+   72  ll
+   73  cat playbook03-hosts.yml 
+   74  ll
+   75  cp playbook03-hosts.yml playbook03-hosts.yml.orig
+   76  vim playbook03-hosts.yml
+   77  pwd
+   78  ll
+   79  vim playbook03-hosts.yml
+   80  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts
+   81  vim playbook03-hosts.yml
+   82  cat playbook03-hosts.yml
+   83  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts
+   84  ssh bender@10.10.2.3
+   85  vim playbook03-hosts.yml
+   86  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts
+   87  ssh banner
+   88  ssh bender
+   89  ssh bender@10.10.2.3
+   90  vim playbook03-hosts.yml
+   91  df -a
+   92  ssh bender@10.10.2.3
+   93  cd inv/dev
+   94  ll
+   95  vi hosts 
+   96  cd ../..
+   97  vim playbook03-hosts.yml
+   98  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts
+   99  vim playbook03-hosts.yml
+  100  cat inv/dev/hosts
+  101  vim playbook03-hosts.yml
+  102  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts
+  103  vim playbook03-hosts.yml
+  104  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts -e engines=ion
+  105  vim ansible.cfg
+  106  ll
+  107  pwd
+  108  vim ansible.cfg
+  109  ansible-playbook playbook03-hosts.yml
+  110  vim ansible.cfg
+  111  ansible -m shell -a "uptime" all
+  112  vim ansible.cfg
+  113  ansible -m shell -a "uptime" all
+  114  vim ansible.cfg
+  115  cat inv/dev/hosts
+  116  ansible -m shell -a "uptime" -h planet-express
+  117  ansible -m shell -a "uptime" all --lists-hosts
+  118  ansible -m shell -a "uptime" all --list-hosts
+  119  cat ansible.cfg 
+  120  cat /home/student/mycode/ansible/inv/dev/hosts 
+  121  ansible-playbook playbook03-hosts.yml
+  122  vim ansible.cfg 
+  123  ansible -m shell -a "uptime" all
+  124  vim ansible.cfg 
+  125  ansible-playbook playbook03-hosts.yml
+  126  pwd
+  127  ssh bender:10.10.2.3
+  128  ssh bender@10.10.2.3
+  129  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts -e engines=ion
+  130  vim playbook03-hosts.yml
+  131  cat ansible.cfg 
+  132  ansible-playbook playbook03-hosts.yml
+  133  pwd
+  134  ll inv/dev/
+  135  vim playbook03-hosts.yml
+  136  ansible-playbook playbook03-hosts.yml -i inv/dev/hosts
+  137  cat ansible.cfg 
+  138  rm ansible.cfg 
+  139  vim ansible.cfg
+  140  ansible-playbook playbook03-hosts.yml
+  141  vim ansible.cfg
+  142  ansible-playbook playbook03-hosts.yml
+  143  vim ansible.cfg
+  144  ansible-playbook playbook03-hosts.yml
+  145  ansible -m shell -a "uptime" all
+  146  vim playbook04-api.yml
+  147  ansible-playbook playbook04-api.yml 
+  148  vim playbook04-api.yml
+  149  ansible-playbook playbook04-api.yml 
+  150  ssh bender@10.10.2.3
+  151  cat inv/dev/hosts 
+  152  ssh fry@10.10.2.4
+  153  vim playbook04-api.yml
+  154  ansible-playbook playbook04-api.yml 
+  155  cd ..
+  156  ls -l
+  157  ll
+  158  git add *
+  159  git commit -m "Midday update for ans and py - training"
+  160  git push https://github.com/jgmusa/mycode master
+  161  ll
+  162  mkdir python
+  163  cd python/
+  164  vi randomgame.py
+  165  cat ~/mycode/
+  166  ll ../ansible/
+  167  cat ../ansible/playbook04-api.
+  168  cat ../ansible/playbook04-api.yml 
+  169  vi randomgame.py
+  170  python3 randomgame.py 
+  171  vi randomgame.py
+  172  python3 randomgame.py 
+  173  vi randomgame.py
+  174  python3 randomgame.py 
+  175  vi randomgame.py
+  176  python3 randomgame.py 
+  177  vi randomgame.py
+  178  python3 randomgame.py 
+  179  vi randomgame.py
+  180  python3 randomgame.py 
+  181  which python
+  182  /usr/bin/python --version
+  183  which python3
+  184  /usr/bin/python3 --version
+  185  python3 -m pip freeze
+  186  python3 -m pip freeze > requirements.txt
+  187  cd ../ansible/
+  188  l
+  189  ll
+  190  vim playbook05-template.yml
+  191  mkdir template
+  192  vim template/ship.conf.j2
+  193  vim playbook05-template.yml
+  194  ll -R
+  195  vim inv/dev/hosts 
+  196  ll
+  197  ansible-playbook playbook05-template.yml 
+  198  ll
+  199  vim playbook05-template.
+  200  vim playbook05-template.yml 
+  201  ansible-playbook playbook05-template.yml 
+  202  ll
+  203  vim playbook05-template.yml 
+  204  ansible-playbook playbook05-template.yml 
+  205  vim playbook05-template.yml 
+  206  ll
+  207  ll template/
+  208  vim template/ship.conf.j2 
+  209  ssh bender@10.10.2.3
+  210  history | grep github
+  211  history > history.txt

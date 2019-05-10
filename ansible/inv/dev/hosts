@@ -6,3 +6,7 @@ bender ansible_host=10.10.2.3 ansible_ssh_user=bender
 #
 [planet-express:vars]
 engines=darkmatter
+enginetype=ion
+weapontype="rubber arrow"
+pecargo=pizza
+shipprice=22000000
